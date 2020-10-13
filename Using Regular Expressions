@@ -1,4 +1,4 @@
-Kusto can use regular expressions
+# Kusto can use regular expressions
 This is a first take on using Kusto to filter a dataset
 
 errcode
