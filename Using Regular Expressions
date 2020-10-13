@@ -2,6 +2,6 @@
 This is a first take on using Kusto to filter a dataset
 
 errcode
-| where ecode matches regex "/\b15\b|\b80\b|\b1223\b/g"
+| where ecode matches regex "\b15\b|\b80\b|\b1223\b"
 
 This should filter where the field ecode is 15, 80 or 1223. Regex may need testing fully to confirm however on regexr.com it works as it should
