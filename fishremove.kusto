@@ -1,0 +1,5 @@
+AlertInfo
+| where Title == "Email messages containing phish URLs removed after delivery"
+| where Timestamp between(datetime("2020-10-01") .. datetime("2020-10-31")) 
+| summarize alertsCount=dcount(AlertId) by Severity
+| sort by alertsCount desc 
